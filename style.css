@@ -1,0 +1,281 @@
+body {
+  background-color: pink;
+  color: red;
+  font-family: monospace;
+  place-content: center;
+  text-align: center;
+  padding: inherit;
+}
+
+h1 {
+  font-family: monospace;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  font-size: 4vw;
+   
+}
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+h1::before {
+  background: pink;
+  animation: typewriter 6s steps(38) 1s forwards;
+}
+h1::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 6s steps(38, end) 1s forwards,
+    blink 750ms steps(38) 11;
+}
+@keyframes typewriter {
+  to { 
+    left: 100%
+  }
+}
+@keyframes blink {
+  to {
+    background: red;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h3 {
+  font-family: monospace;
+  position: relative;
+  width: max-content;
+  margin: auto;
+  font-size: 3vw;
+}
+h3::before,
+h3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h3::before {
+  background: pink;
+  animation: typewriter 1s steps(4) 8s forwards;
+}
+
+h3::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 1s steps(4, end) 8s forwards,
+    blink 750ms steps(4) 8s 3;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 3vw;
+}
+
+.verse1 {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.verse1::before,
+.verse1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.verse1::before {
+  background: pink;
+  animation: typewriter 5s steps(30) 10s forwards;
+}
+.verse1::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 5s steps(30, end) 10s forwards,
+    blink 750ms steps(30) 10s 8;
+}
+
+.verse2 {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.verse2::before,
+.verse2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.verse2::before {
+  background: pink;
+  animation: typewriter 4s steps(20) 16s forwards;
+}
+.verse2::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 4s steps(20, end) 16s forwards,
+    blink 750ms steps(20) 16s 7;
+}
+
+.verse3 {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.verse3::before,
+.verse3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.verse3::before {
+  background: pink;
+  animation: typewriter 8s steps(43) 21s forwards;
+}
+.verse3::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 8s steps(43, end) 21s forwards,
+    blink 750ms steps(43) 21s 12;
+}
+
+.verse4 {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.verse4::before,
+.verse4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.verse4::before {
+  background: pink;
+  animation: typewriter 5s steps(31) 30s forwards;
+}
+.verse4::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 5s steps(31, end) 30s forwards,
+    blink 750ms steps(31) 30s 8;
+}
+
+.verse5 {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.verse5::before,
+.verse5::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.verse5::before {
+  background: pink;
+  animation: typewriter 8s steps(40) 36s forwards;
+}
+.verse5::after {
+  width: 0.125em;
+  background: pink;
+  animation: 
+    typewriter 8s steps(40, end) 36s forwards,
+    blink 750ms steps(40) 36s infinite;
+}
+
+.heart {
+    position: relative; 
+    width: 100px; 
+    height: 100px; 
+    margin: auto;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 45s forwards;
+}
+.heart:before, 
+.heart:after { 
+    position: absolute; 
+    content: ""; 
+    left: 50px; 
+    top: 0; 
+    width: 50px; 
+    height: 80px; 
+    background: red; 
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%; 
+} 
+.heart:after { 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin:100% 100%;
+}
+
+.bigq {
+  position: relative;
+  font-weight: 697;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 45s forwards;
+}
+
+
+
+.yass, .duh, .email {
+  border-radius: 15px;
+  padding: 5px 20px;
+  font-family: monospace;
+  color: red;
+  background: white;
+  cursor: pointer;
+  border-style: solid;
+  border-color: red;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 45s forwards;
+ 
+}
+
+.yass:hover, .duh:hover {
+  background: red;
+  color: pink;
+}
+
+::placeholder {
+  color: red;
+}
